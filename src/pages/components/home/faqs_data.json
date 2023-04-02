@@ -1,0 +1,32 @@
+{
+   "faqs": [
+      {
+         "title": "Is it Safe to Trade with Paybiz",
+         "content": "It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though thetransition does limit overflow.",
+         "data_bs_target": "#collapseOne",
+         "arial": "collapseOne",
+         "id": "headingOne"
+        },
+      {
+        "title": "Is it Safe to Trade with Paybiz",
+        "content": "It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though thetransition does limit overflow.",
+        "data_bs_target": "#collapseTwo",
+        "arial": "collapseTwo",
+        "id": "headingTwo"
+    },
+     {
+        "title": "Is it Safe to Trade with Paybiz",
+        "content": "It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though thetransition does limit overflow.",
+        "data_bs_target": "#collapseThree",
+        "arial": "collapseThree",
+        "id": "headingThree"
+    },
+     {
+        "title": "Is it Safe to Trade with Paybiz",
+        "content": "It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though thetransition does limit overflow.",
+        "data_bs_target": "#collapseFour",
+        "arial": "collapseFour",
+        "id": "headingFour"
+    }
+   ]
+}

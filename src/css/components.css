@@ -1,0 +1,139 @@
+.payment{
+    padding: 50px 1px;
+}
+.payment .p-head, .payment .p-data, .payment .p-detail {
+    background: lightgrey;
+    padding: 30px 15px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 5px 1px;
+}
+.payment .p-deta p{
+    margin: 0;
+    padding: 0;
+}
+.payment b{
+    color: #dc3545;
+}
+.payment .p-detail {
+    text-align-last: left;
+}
+.payment .p-detail p{
+    margin: 0;padding: 0;
+}
+.payment .p-detail .p-detail-head{
+    padding: 20px 1px;
+    font-weight: bold;
+}
+.payment .p-detail .p-detail-head span{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 1px 5px;
+    color: #dc3545;
+}
+.payment .p-detail label{
+    padding: 10px 1px;
+}
+
+.t-history{
+    padding: 40px 1px;
+}
+.t-history .card-con .card-con-head{
+    padding: 30px 1px;
+}
+.t-history .card-con .card-con-head span{
+    font-weight: bold;
+    font-size: 22px;
+}
+.t-history .card-con .card {
+    background: #f6f6f6;
+    border-radius: 8px;
+    padding: 0px;
+    margin: 10px 1px;
+}
+.t-history .card .card-head{
+    background: #ed3346;
+    border-radius: 8px;
+    padding: 10px 8px;
+    color: #fff;
+}
+.t-history .card .btn{
+    border-radius: 20px;
+    padding: 1px 40px;
+}
+.t-history .card ul{
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+.t-history .card ul.head{
+    color: #616161;
+}
+.t-history .card ul.head li{
+    text-align-last: left;
+}
+.t-history .card ul li{
+    margin-top: 5px;
+}
+.t-history .card ul {
+    color: #000;
+}
+.t-history .card ul li {
+    padding: 5px;
+    text-align: right;
+}
+.c-mobile {
+    display: none;
+}
+@media (max-width: 780px){
+    .card{
+        display: none;
+    }
+    .c-mobile{
+        display: block;
+    }
+}
+
+.swap{
+    padding: 10px 1px;
+}
+.swap .s-head{
+    padding: 20px 0px;
+    text-transform: uppercase;
+}
+.swap .s-card{
+    padding: 30px 20px;
+    border-radius: 20px;
+}
+.swap .s-card td{
+    text-align: right;
+    padding: 10px 0px;
+}
+.swap .s-card input{
+    padding: 10px 5px;
+    border-radius: 20px;
+}
+.swap .s-card label{
+    font-weight: bold;
+    padding: 10px 0px;
+}
+.swap .s-card .s-arrow{
+    font-size: 26px;
+}
+.swap .s-card  img{
+    position: relative;
+    height: 35px;
+    width: 35px;
+}
+.swap .s-card .input-group .btn{
+    background: #fff;
+}
+.swap .s-card .btn-buy{
+    width: 100%;
+    background: #22577a;
+    color: #fff;
+    font-weight: bold;
+}
+.swap .s-card .btn-buy:hover{
+    background: #2b71a0;
+}

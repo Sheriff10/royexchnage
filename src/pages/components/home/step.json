@@ -1,0 +1,25 @@
+{
+   "card": [
+      {
+         "color": "bg-danger text-light",
+         "icon_color": "bg-light text-dark",
+         "title": "This is the card title",
+         "icon": "This is the card title",
+         "text": "This is a random text given ti this paraph justed wanted to write shit to see if this mother fucking thing would work gues it did"
+      },
+      {
+         "color": "bg-danger text-light",
+         "icon_color": "bg-light text-dark",
+         "title": "This is the card title",
+         "icon": "This is the card title",
+         "text": "This is a random text given ti this paraph justed wanted to write shit to see if this mother fucking thing would work gues it did"
+      },
+      {
+         "color": "bg-danger text-light",
+         "icon_color": "bg-light text-dark",
+         "title": "This is the card title",
+         "icon": "This is the card title",
+         "text": "This is a random text given ti this paraph justed wanted to write shit to see if this mother fucking thing would work gues it did"
+      }
+   ]
+}

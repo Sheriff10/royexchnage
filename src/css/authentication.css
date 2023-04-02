@@ -1,0 +1,26 @@
+
+.login .row.c{
+    min-height: 80vh;
+    align-items: center;
+}
+.login .form{
+    padding: 50px 20px;
+    border-radius: 10px
+}
+.login .form .form-text{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+}
+.login .form span.icon{
+    background: #dc3545;
+    padding: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 50%;
+}
+.login .btn{
+    /* background: white; */
+    /* border: 2px solid black; */
+}
+/* #dc3545 */
