@@ -1,6 +1,43 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 import { FaClipboard } from "react-icons/fa";
 export const Payment = () => {
+   const params = new URLSearchParams(window.location.search);
+   const id = params.get("id");
+
+   const [transaction_data, setTransaction_data] = useState([
+      {NGN: "loading", USDT: "loading", address: "loading"}
+   ])
+
+   useEffect(() => {
+      authorize();
+      getTransactionData()
+   }, []);
+   const authorize = () => {
+      var checkToken = window.sessionStorage.getItem("token");
+      if (checkToken) {
+         return true;
+      } else {
+         window.location.href = "/login";
+      }
+   };
+
+   const getTransactionData = async () => {
+      await axios
+         .get(`${window.api}/get_transaction/${id}`, {
+            headers: {
+               "x-auth-token": window.sessionStorage.getItem("token"),
+               "Content-Type": "application/json",
+            },
+         })
+         .then((res) => {
+            setTransaction_data(res.data)
+            console.log(res);
+         })
+         .catch((err) => {
+            console.log(err);
+         });
+   };
    return (
       <div className="payment">
          <div className="container">
@@ -17,21 +54,21 @@ export const Payment = () => {
                            <b>Buy Amount</b>
                         </span>{" "}
                         <br />
-                        <small>#10,000</small>
+                        <small>{transaction_data.NGN}</small>
                      </div>
                      <div className="p-data-text m-3">
                         <span>
-                           <b>Buy Amount</b>
+                           <b>Recieving</b>
                         </span>{" "}
                         <br />
-                        <small>#10,000</small>
+                        <small>{transaction_data.USDT}</small>
                      </div>
                      <div className="p-data-text m-3">
                         <span>
-                           <b>Buy Amount</b>
+                           <b>Transaction Status</b>
                         </span>{" "}
                         <br />
-                        <small>#10,000</small>
+                        <small>{transaction_data.status}</small>
                      </div>
                   </div>
                </div>
@@ -40,7 +77,7 @@ export const Payment = () => {
                      <div className="p-detail-head">
                         <p>
                            {" "}
-                           Send <span className="amt">70,000</span> to the
+                           Send <span className="amt">#{transaction_data.NGN}</span> to the
                            account below
                         </p>
                      </div>
@@ -126,7 +163,7 @@ export const Payment = () => {
                            type="text"
                            className="form-control"
                            value={
-                              "0xGYS2782VT8s7VG2bBSUJ0WBSH629BUH782BYD*29nnd82"
+                              `${transaction_data.length == 0 ? "loading..." : transaction_data.address}`
                            }
                            readOnly
                            disabled

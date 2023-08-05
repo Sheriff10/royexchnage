@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export const Footer = () => {
    return (
-      <footer>
+      <footer className="p-0 m-0">
          <div className="container">
             <div className="row">
                <div className="col-lg-4 col-sm-12 col-md-6">

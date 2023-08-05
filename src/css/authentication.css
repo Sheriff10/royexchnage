@@ -5,12 +5,19 @@
 }
 .login .form{
     padding: 50px 20px;
-    border-radius: 10px
+    background: #000;
+    border-radius: 10px; 
+    margin: 20px 1px;
 }
 .login .form .form-text{
     display: flex;
     justify-content: space-between;
     padding: 10px 5px;
+}
+.login .form input{
+    background: #ffffff23;
+    border: none;
+    color: #fff;
 }
 .login .form span.icon{
     background: #dc3545;

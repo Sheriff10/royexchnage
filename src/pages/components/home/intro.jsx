@@ -8,10 +8,10 @@ export const Intro = () => {
             <div className="container">
                <div className="row c">
                   <div className="col-lg-6 col-sm-12 col-md-12">
-                     <h1>TRADE YOUR CRYPTO WITH ONE EASE. </h1>
-                     <span className="h4 text-bold">
+                     <h1 className="fw-bold">THE HOME OF TRADE. <br /> ROY EXCHANGE, TRADE WITH COMFORT </h1>
+                     <small className="h4  text-">
                         FirstPay, the home of trading
-                     </span>
+                     </small>
                      <div className="sm-text">
                         <div className="row">
                            <div className="col">

@@ -9,14 +9,15 @@ export const Header = () => {
       if (slide) slide.classList.toggle("open");
     };
    return (
-      <div className="header">
+      <>
+      <div className="position-relative py-5"></div>
+      <div className="header top-0 end-0 start-0 py-2 position-fixed ">
          <div className="container">
             <div className=" c">
                <div className="col-lg-3 col-sm-12 col-md-6">
                   <div className="logo">
-                     <img src="logo.png" alt="firstoay" className="img-fluid" />
-                     <span className="h3"><b>FirstPay</b></span>
-                  </div>
+                     <span className="h3 text-light"><b>Logo</b></span>
+                  </div>w
                </div>
                <div className="col-lg-5 col-sm-12 col-md-6">
                   <div className="nav-menu">
@@ -69,5 +70,6 @@ export const Header = () => {
             </div>
          </div>
       </div>
+      </>
    );
 };

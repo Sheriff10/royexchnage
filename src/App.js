@@ -12,6 +12,7 @@ import { THistory } from './pages/components/t_history';
 import { Trade } from './pages/components/swap';
 import { Home } from './pages/components/home';
 import { Footer } from './pages/global/footer';
+import Staking from './pages/components/staking';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path='/payment' element={<Payment />}></Route>
         <Route path='/t/history' element={<THistory />}></Route>
         <Route path='/trade' element={<Trade />}></Route>
+        <Route path='/staking' element={<Staking />} />
       </Routes>
       <Footer />
     </div>

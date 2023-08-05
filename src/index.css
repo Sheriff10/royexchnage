@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.pb-bg-pri-grad{
+  background: rgb(14, 128, 185);
+   background: linear-gradient(
+      45deg,
+      rgba(14, 128, 185, 1) 0%,
+      rgba(242, 5, 91, 1) 100%
+   );
+}
+.pb-bg-sec {
+  background: #111010;
+}

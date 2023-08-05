@@ -1,8 +1,9 @@
 .header {
-   /* background: #000; */
+   background: #111010;
+   z-index: 5;
 }
 .header ul a {
-   color: black;
+   color: #fff;
 }
 .header .c {
    align-items: center;
@@ -49,7 +50,7 @@
    align-items: center;
 }
 .header .menu-btn-b .menu-btn-burger {
-   background: #000;
+   background: rgb(225, 90, 112);
    height: 3px;
    width: 100%;
    border-radius: 5px;
@@ -59,7 +60,7 @@
 .header .menu-btn-b .menu-btn-burger::after {
    content: "";
    position: absolute;
-   background: #000;
+   background: #fff;
    height: 3px;
    width: 100%;
    border-radius: 5px;
@@ -89,7 +90,6 @@
    .header {
       position: fixed;
       width: 100%;
-      background: lightgray;
       border-bottom: 1px solid #000;
       z-index: 10;
    }
@@ -153,7 +153,7 @@
 }
 
 footer{
-   background: var(--bs-danger);
+   background: #111010;
    margin-top: 40px;
    color: #fff;
 }

@@ -4,3 +4,6 @@ a{
 li{
     list-style-type: none;
 }
+.text-bold{
+    font-weight: bold;
+}

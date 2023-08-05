@@ -52,7 +52,7 @@
     margin: 10px 1px;
 }
 .t-history .card .card-head{
-    background: #ed3346;
+    background: #111010;
     border-radius: 8px;
     padding: 10px 8px;
     color: #fff;
@@ -81,6 +81,10 @@
 .t-history .card ul li {
     padding: 5px;
     text-align: right;
+}
+.t-history .c-mobile .card-body{
+    border-bottom: 1px solid black;
+    margin: 5px 0px;
 }
 .c-mobile {
     display: none;

@@ -1,66 +1,82 @@
-.intro{
-    background: url('../../public/p2p.jpeg');
+.intro {
+   background: rgb(14, 128, 185);
+   background: linear-gradient(
+      45deg,
+      rgba(14, 128, 185, 1) 0%,
+      rgba(242, 5, 91, 1) 100%
+   );
 }
-.intro .wrapper{
-    padding: 40px 1px;
-    background: #00000083;
+.intro .wrapper {
+   padding: 40px 1px;
+   background: #00000054;
 }
-.intro .c{
-    min-height: 80vh;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
+.intro .c {
+   min-height: 100vh;
+   align-items: center;
+   justify-content: center;
+   color: #fff;
 }
 .intro .btn-con .row {
-justify-content: space-between;
-padding-left: 5px;
+   justify-content: space-between;
+   padding-left: 5px;
 }
-.intro .sm-text{
-    padding: 20px 1px;
-    font-weight: bold;
+.intro .sm-text {
+   padding: 20px 1px;
+   font-weight: bold;
 }
 
 @media (max-width: 995px) {
-    .intro{
-        text-align: center;
-    }
+   .intro {
+      text-align: center;
+   }
 }
-.about{
-    padding: 20px 1px;
-    background: var(--bs-danger);
-    color: #fff;
+.about {
+   /* padding: 20px 1px; */
+   background: url('../../public/p2p.jpeg') no-repeat fixed;
+   color: black;
+
 }
-.about .row{
-    /* background: #000; */
-    align-items: center;
+.about .row {
+   /* background: #000; */
+   align-items: center;
+}
+.about .a-wrap {
+backdrop-filter: blur(6px);
 }
 
-.cards{
-    padding: 20px 1px;
+.cards {
+   padding: 20px 1px;
 }
-.cards .c-card{
-    border: 1px solid var(--bs-danger);
-    border-radius: 10px;
+.cards .c-card {
+   border: 1px solid var(--bs-danger);
+   border-radius: 10px;
 }
-.cards .c-card .c-card-icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 1px;
+.cards .c-card .c-card-icon {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px 1px;
 }
-.cards .c-card .c-card-icon i{
-    /* background: var(--bs-danger); */
-    border-radius: 50%;
-    padding: 18px 20px;
+.cards .c-card .c-card-icon i {
+   /* background: var(--bs-danger); */
+   border-radius: 50%;
+   padding: 18px 20px;
 }
 
 .cards .c-card {
-    margin: 5px 1px;
+   margin: 5px 1px;
 }
 
-.faqs{
-    padding: 50px 1px;
+.faqs {
+   padding: 50px 1px;
 }
-.faqs .f-head{
-    padding: 20px 1px;
+.faqs .f-head {
+   padding: 20px 1px;
+}
+.swap {
+    background: url("../../public/lava.jpeg") no-repeat;
+    background-size: cover;
+}
+.swap .s-blur{
+    backdrop-filter: blur(13px);
 }
