@@ -13,6 +13,8 @@ import { Trade } from './pages/components/swap';
 import { Home } from './pages/components/home';
 import { Footer } from './pages/global/footer';
 import Staking from './pages/components/staking';
+import Dashboard from './pages/components/dashboard';
+import Investments from './pages/components/investments';
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
         <Route path='/t/history' element={<THistory />}></Route>
         <Route path='/trade' element={<Trade />}></Route>
         <Route path='/staking' element={<Staking />} />
+        <Route path='/dashboard' element={<Dashboard />} />
+        <Route path='/investments' element={<Investments />} />
       </Routes>
       <Footer />
     </div>

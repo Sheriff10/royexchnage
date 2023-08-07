@@ -17,10 +17,10 @@ export const Header = () => {
                <div className="col-lg-3 col-sm-12 col-md-6">
                   <div className="logo">
                      <span className="h3 text-light"><b>Logo</b></span>
-                  </div>w
+                  </div>
                </div>
-               <div className="col-lg-5 col-sm-12 col-md-6">
-                  <div className="nav-menu">
+               <div className="col-lg-5 nav-menu col-sm-12 col-md-6">
+                  <div className="">
                      <ul>
                         <li>
                            <NavLink to="/">Home</NavLink>
@@ -51,8 +51,8 @@ export const Header = () => {
                      </ul>
                   </div>
                </div>
-               <div className="col-lg-4 col-sm-6 col-md-6">
-                  <div className="btn-menu">
+               <div className="col-lg-4 btn-menu col-sm-6 col-md-6">
+                  <div className="">
                      <Link
                         className="btn btn-outline-danger l-btn"
                         to={"/login"}

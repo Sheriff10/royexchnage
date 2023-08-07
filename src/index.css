@@ -1,18 +1,11 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
+
+#root span, #root h1, #root h2, #root h3, #root small, #root p, #root a, #root li, #root tr {
+  font-family: 'Preahvihear', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-.pb-bg-pri-grad{
-  background: rgb(14, 128, 185);
+.pb-bg-pri-grad {
+   background: rgb(14, 128, 185);
    background: linear-gradient(
       45deg,
       rgba(14, 128, 185, 1) 0%,
@@ -20,5 +13,5 @@ code {
    );
 }
 .pb-bg-sec {
-  background: #111010;
+   background: #111010;
 }

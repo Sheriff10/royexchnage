@@ -44,7 +44,7 @@ export const Signup = () => {
                <div className="col-lg-4 col-sm-12 col-md-10">
                   <div className="form ">
                      <div className="col-12 text-center">
-                        <span className="icon text-light fs-3 pb-3 px-3">
+                        <span className="icon text-light fs-3 pt-1 pb-2 px-3">
                            <FaBitcoin />
                         </span>
                         <h3 className="p-3 fw-bold text-light">REGISTER TO ROYXCHANGE</h3>

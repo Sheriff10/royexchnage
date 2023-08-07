@@ -147,3 +147,10 @@
 .invest th {
     padding: 20px 5px;
 }
+.dashboard, .investments {
+    background: #f8f8f8;
+    min-height: 70vh;
+}
+.investments th, .investments td{
+    padding: 10px;
+}
