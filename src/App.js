@@ -7,14 +7,15 @@ import './css/global.css'
 import './css/components.css'
 import './css/home.css'
 import { Header } from './pages/global/header';
-import { Payment } from './pages/components/payment';
-import { THistory } from './pages/components/t_history';
-import { Trade } from './pages/components/swap';
+import { Payment } from './pages/components/users/payment';
+import { THistory } from './pages/components/users/t_history';
+import { Trade } from './pages/components/users/swap';
 import { Home } from './pages/components/home';
 import { Footer } from './pages/global/footer';
-import Staking from './pages/components/staking';
-import Dashboard from './pages/components/dashboard';
-import Investments from './pages/components/investments';
+import Staking from './pages/components/users/staking';
+import Dashboard from './pages/components/users/dashboard';
+import Investments from './pages/components/users/investments';
+import Deposits from './pages/components/users/deposits';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path='/staking' element={<Staking />} />
         <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/investments' element={<Investments />} />
+        <Route path='/deposits' element={<Deposits />} />
       </Routes>
       <Footer />
     </div>

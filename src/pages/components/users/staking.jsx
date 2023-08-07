@@ -3,7 +3,7 @@ import { FaBtc } from "react-icons/fa";
 import {
    INITIAL_STAKING_REDUCER,
    stakingReducer,
-} from "../../reducers/stakingReducer";
+} from "../../../reducers/stakingReducer";
 import Invest from "./invest";
 
 export default function Staking() {
