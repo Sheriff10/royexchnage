@@ -10,8 +10,8 @@ export const Header = () => {
     };
    return (
       <>
-      <div className="position-relative py-5"></div>
-      <div className="header top-0 end-0 start-0 py-2 position-fixed ">
+      {/* <div className="position-relative py-5"></div> */}
+      <div className="header top-0 end-0 start-0 py-2 ">
          <div className="container">
             <div className=" c">
                <div className="col-lg-3 col-sm-12 col-md-6">

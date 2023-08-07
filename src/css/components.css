@@ -141,3 +141,9 @@
 .swap .s-card .btn-buy:hover{
     background: #2b71a0;
 }
+.invest{
+    backdrop-filter: blur(10px);
+}
+.invest th {
+    padding: 20px 5px;
+}
