@@ -24,7 +24,7 @@ export default function Invest({ state, dispatch, toggle }) {
                     <span className="fs-3 bg-danger px-3 rounded cursor-pointer" role="button" tabindex="0" onClick={toggle}>x</span>
                 </div>
                   <div className="head pb-4 text-center">
-                     <span className="fw-bold fs-3">Primary Investment</span>
+                     <span className="fw-bold fs-3">{state.staking_name}</span>
                   </div>
                   <div className="body">
                      <table className="w-100">

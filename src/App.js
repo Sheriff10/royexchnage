@@ -23,15 +23,15 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Home />}></Route>
-        <Route path='/login' element={<Login />}></Route>
-        <Route path='/signup' element={<Signup />}></Route>
-        <Route path='/payment' element={<Payment />}></Route>
-        <Route path='/t/history' element={<THistory />}></Route>
-        <Route path='/trade' element={<Trade />}></Route>
-        <Route path='/staking' element={<Staking />} />
-        <Route path='/dashboard' element={<Dashboard />} />
-        <Route path='/investments' element={<Investments />} />
-        <Route path='/deposits' element={<Deposits />} />
+        <Route path='/auth/login' element={<Login />}></Route>
+        <Route path='/auth/signup' element={<Signup />}></Route>
+        <Route path='/user/payment' element={<Payment />}></Route>
+        <Route path='/user/t/history' element={<THistory />}></Route>
+        <Route path='/user/trade' element={<Trade />}></Route>
+        <Route path='/user/staking' element={<Staking />} />
+        <Route path='/user/dashboard' element={<Dashboard />} />
+        <Route path='/user/investments' element={<Investments />} />
+        <Route path='/user/deposits' element={<Deposits />} />
       </Routes>
       <Footer />
     </div>

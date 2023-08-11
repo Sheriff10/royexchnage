@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 import { FaClipboard, FaArrowAltCircleDown } from "react-icons/fa";
+import User_layout from "./user_layout";
 
 export const Trade = () => {
    const [NGN, setNGN] = useState("");
@@ -11,7 +12,7 @@ export const Trade = () => {
    const [token, setToken] = useState("");
 
    useEffect(() => {
-      authorize();
+      // authorize();
    }, []);
 
    const authorize = () => {
@@ -77,88 +78,98 @@ export const Trade = () => {
       }
    };
    return (
-      <div className="swap mt mb-0">
-         <div className="bg-con pt-4">
-            <div className="s-blur">
-               <div className="container">
-                  <div className="row justify-content-center">
-                     <div className="col-lg-4 col-sm-12 col-md-8">
-                        <div className="s-head">
-                           <span className="h4 fw-bold text-light">
-                              {" "}
-                              Trade Now
-                           </span>
-                        </div>
-                        <div className="s-card pb-bg-sec text-light">
-                           <label>YOU SEND</label>
-                           <div class="input-group mb-3">
-                              <div class="btn" type="button" id="button-addon1">
-                                 <img src="bnb-logo.png" alt="usdt_img" />
+      <User_layout>
+         <div className="swap mt mb-0">
+            <div className="bg-con pt-4">
+               <div className="s-blur">
+                  <div className="container">
+                     <div className="row justify-content-center">
+                        <div className="col-lg-4 col-sm-12 col-md-8">
+                           <div className="s-head">
+                              <span className="h4 fw-bold text-light">
+                                 {" "}
+                                 Trade Now
+                              </span>
+                           </div>
+                           <div className="s-card pb-bg-sec text-light">
+                              <label>YOU SEND</label>
+                              <div class="input-group mb-3">
+                                 <div
+                                    class="btn"
+                                    type="button"
+                                    id="button-addon1"
+                                 >
+                                    <img src="/bnb-logo.png" alt="usdt_img" />
+                                 </div>
+                                 <input
+                                    type="number"
+                                    class="form-control"
+                                    placeholder="5000"
+                                    aria-label="Example text with button addon"
+                                    aria-describedby="button-addon1"
+                                    onChange={(e) => setNGN(e.target.value)}
+                                    value={NGN}
+                                    onKeyUp={rateConverter}
+                                 />
                               </div>
-                              <input
-                                 type="number"
-                                 class="form-control"
-                                 placeholder="5000"
-                                 aria-label="Example text with button addon"
-                                 aria-describedby="button-addon1"
-                                 onChange={(e) => setNGN(e.target.value)}
-                                 value={NGN}
-                                 onKeyUp={rateConverter}
-                              />
-                           </div>
-                           {err}
-                           <div className="s-arrow text-center">
-                              <FaArrowAltCircleDown />
-                           </div>
-                           <label>YOU RECIEVE</label>
-                           <div class="input-group mb-3">
-                              <div class="btn" type="button" id="button-addon1">
-                                 <img src="usdt.png" alt="usdt_img" />
+                              {err}
+                              <div className="s-arrow text-center">
+                                 <FaArrowAltCircleDown />
                               </div>
-                              <input
-                                 type="text"
-                                 class="form-control"
-                                 placeholder="USDT"
-                                 aria-label="Example text with button addon"
-                                 aria-describedby="button-addon1"
-                                 value={USDT}
-                              />
+                              <label>YOU RECIEVE</label>
+                              <div class="input-group mb-3">
+                                 <div
+                                    class="btn"
+                                    type="button"
+                                    id="button-addon1"
+                                 >
+                                    <img src="/usdt.png" alt="usdt_img" />
+                                 </div>
+                                 <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="USDT"
+                                    aria-label="Example text with button addon"
+                                    aria-describedby="button-addon1"
+                                    value={USDT}
+                                 />
+                              </div>
+                              <label>Recieving Address</label>
+                              <div class="input-group mb-3">
+                                 <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Input address recieving the USDT"
+                                    aria-describedby="button-addon1"
+                                    onChange={(e) => setAddress(e.target.value)}
+                                    value={address}
+                                 />
+                              </div>{" "}
+                              {err2}
+                              <br />
+                              <div
+                                 className="btn btn-buy \"
+                                 onClick={handleSubmit}
+                              >
+                                 Buy Now
+                              </div>
+                              <table width={"100%"} className="">
+                                 <tr>
+                                    <th>Rate per $</th>
+                                    <td>#700</td>
+                                 </tr>
+                                 <tr>
+                                    <th>Floating Fee</th>
+                                    <td>#0.00</td>
+                                 </tr>
+                              </table>
                            </div>
-                           <label>Recieving Address</label>
-                           <div class="input-group mb-3">
-                              <input
-                                 type="text"
-                                 class="form-control"
-                                 placeholder="Input address recieving the USDT"
-                                 aria-describedby="button-addon1"
-                                 onChange={(e) => setAddress(e.target.value)}
-                                 value={address}
-                              />
-                           </div>{" "}
-                           {err2}
-                           <br />
-                           <div
-                              className="btn btn-buy \"
-                              onClick={handleSubmit}
-                           >
-                              Buy Now
-                           </div>
-                           <table width={"100%"} className="">
-                              <tr>
-                                 <th>Rate per $</th>
-                                 <td>#700</td>
-                              </tr>
-                              <tr>
-                                 <th>Floating Fee</th>
-                                 <td>#0.00</td>
-                              </tr>
-                           </table>
                         </div>
                      </div>
                   </div>
                </div>
             </div>
          </div>
-      </div>
+      </User_layout>
    );
 };

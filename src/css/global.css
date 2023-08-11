@@ -110,7 +110,7 @@
       align-items: center;
       transform: translateX(-100%);
       transition: all 1s cubic-bezier(0.23, -0.6, 0.81, 1.61);
-      z-index: 8;
+      z-index: 1000;
    }
    .header .nav-menu ul {
       display: block;
