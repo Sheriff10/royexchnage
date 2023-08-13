@@ -14,8 +14,9 @@ export default function Investments() {
                      <thead className="bg-black py-4 text-light">
                         <tr>
                            <th>Name</th>
-                           <th>ROI</th>
+                           <th>apy</th>
                            <th>Amount</th>
+                           <th>ROI</th>
                            <th>Maturity</th>
                            <th>Action</th>
                         </tr>
@@ -25,6 +26,7 @@ export default function Investments() {
                            <td>Premium Investment</td>
                            <td>45%</td>
                            <td>50 USDT</td>
+                           <td>$150</td>
                            <td>2:49:39:45</td>
                            <td>
                               <button className="btn btn-danger">Claim</button>

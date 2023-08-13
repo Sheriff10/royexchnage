@@ -16,6 +16,8 @@ import Staking from './pages/components/users/staking';
 import Dashboard from './pages/components/users/dashboard';
 import Investments from './pages/components/users/investments';
 import Deposits from './pages/components/users/deposits';
+import Withdraw from './pages/components/users/withdraw';
+import WithdrawalHistory from './pages/components/users/withdrawal_history';
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
         <Route path='/user/dashboard' element={<Dashboard />} />
         <Route path='/user/investments' element={<Investments />} />
         <Route path='/user/deposits' element={<Deposits />} />
+        <Route path='/user/withdraw' element={<Withdraw />} />
+        <Route path='/user/withdraw-history' element={<WithdrawalHistory />} />
       </Routes>
       <Footer />
     </div>

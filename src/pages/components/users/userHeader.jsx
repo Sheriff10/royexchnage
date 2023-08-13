@@ -8,11 +8,11 @@ const UserHeader = () => {
    };
    const linkArr = [
       linkFunc(<FaTachometerAlt />, "Dashboard", "/user/dashboard"),
-      linkFunc(<FaExchangeAlt />, "Trade", "/user/trade"),
       linkFunc(<FaHandHoldingUsd />, "Staking", "/user/staking"),
-      linkFunc(<FaHistory />, "Transaction History", "/user/t/history"),
       linkFunc(<FaChartLine />, "Investment", "/user/investments"),
       linkFunc(<FaCoins />, "Deposit History", "/user/deposits"),
+      linkFunc(<FaCoins />, "Withdraw", "/user/withdraw"),
+      linkFunc(<FaCoins />, "Withdrawal History", "/user/withdraw-history"),
    ];
 
    return (
