@@ -10,15 +10,6 @@ export const THistory = () => {
       // authorize();
       getTransaction();
    }, []);
-   const authorize = () => {
-      var checkToken = window.sessionStorage.getItem("token");
-      if (checkToken) {
-         setToken(checkToken);
-         return true;
-      } else {
-         window.location.href = "/login";
-      }
-   };
 
    const getTransaction = async () => {
       const authToken = window.sessionStorage.getItem("token");

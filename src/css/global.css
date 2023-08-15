@@ -182,3 +182,6 @@ footer .ft-cap{
 footer .ft-cap .col:last-child{
    text-align: right;
 }
+.s-img img{
+   height: 50px;
+}

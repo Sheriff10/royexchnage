@@ -13,9 +13,9 @@ export default function Staking() {
       return { name, apy, days };
    };
    const investmentArr = [
-      investmentFunc("Primary Investment", "20", "7 Days"),
-      investmentFunc("Secondary Investment", "42", "14 Days"),
-      investmentFunc("Golden Investment", "100", "23 Days"),
+      investmentFunc("Primary Investment", "21", "7 Days"),
+      investmentFunc("Secondary Investment", "35", "7 Days"),
+      investmentFunc("Golden Investment", "1,080", "180 Days"),
    ];
    const [state, dispatch] = useReducer(
       stakingReducer,
@@ -44,7 +44,7 @@ export default function Staking() {
                      >
                         <div className="s-card my-5 shadow p-4 rounded">
                            <div className="s-card-head">
-                              <div className="d-flex justify-content-between pb-3 fw-bold fs-3">
+                              <div className="d-flex s-img justify-content-between pb-3 fw-bold fs-3">
                                  <span> STAKE USDT</span>
                                  <img
                                     src="/usdt.png"

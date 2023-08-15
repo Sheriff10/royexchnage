@@ -3,23 +3,23 @@
       {
          "color": "white",
          "icon_color": "bg-danger",
-         "title": "This is the card title",
-         "icon": "This is the card title",
-         "text": "This is a random text given ti this paraph justed wanted to write shit to see if this mother fucking thing would work gues it did"
+         "title": "Staking Opportunities",
+         "icon": "<FaChartLine size={30} />",
+         "text": "Invest in our platform to access a range of staking opportunities that offer impressive returns of 7-100% ROI within just 7 days. Our carefully curated selection of assets ensures that you can put your funds to work efficiently while enjoying the benefits of compounding rewards."
       },
       {
          "color": "white",
          "icon_color": "bg-danger",
-         "title": "This is the card title",
+         "title": "Secure and Reliable Platform",
          "icon": "This is the card title",
-         "text": "This is a random text given ti this paraph justed wanted to write shit to see if this mother fucking thing would work gues it did"
+         "text": "Experience peace of mind as you stake your assets on our secure and reliable platform. Our advanced security measures and robust architecture ensure the safety of your investments, allowing you to focus on maximizing your returns without worries."
       },
       {
          "color": "white",
          "icon_color": "bg-danger",
-         "title": "This is the card title",
+         "title": "User-Friendly Interface and Support",
          "icon": "This is the card title",
-         "text": "This is a random text given ti this paraph justed wanted to write shit to see if this mother fucking thing would work gues it did"
+         "text": "Navigating the world of staking has never been easier. Our user-friendly interface provides a seamless experience, guiding you through the staking process effortlessly. Additionally, our dedicated support team is available to assist you at every step, ensuring you have a smooth and rewarding journey."
       }
    ]
 }

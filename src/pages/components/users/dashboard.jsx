@@ -1,13 +1,43 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import Countdown from "react-countdown";
 import {
    FaDollarSign,
    FaMoneyBillWave,
    FaPaperPlane,
    FaTree,
+   FaExclamationCircle,
 } from "react-icons/fa";
+import { tokenExpire } from "../../authentication/auth";
 import User_layout from "./user_layout";
 
 export default function Dashboard() {
+   useEffect(() => {
+      getStats();
+   }, []);
+   const [stats, setStats] = useState({
+      balance: "...",
+      investment_amount: "...",
+      stakings: "...",
+      withdrawals: "...",
+      total_earnings: "...",
+   });
+
+   const getStats = async () => {
+      try {
+         const response = await axios.get(`${window.api}/client/user_stats`, {
+            headers: {
+               "x-auth-token": window.token,
+               "Content-Type": "application/json",
+            },
+         });
+         setStats(response.data);
+         console.log(response);
+      } catch (error) {
+         console.log(error);
+         if (error.response.data.message === "jwt expired") tokenExpire();
+      }
+   };
    const cardsFunc = (title, icon, text, caption, alertType) => {
       return { title, icon, text, caption, alertType };
    };
@@ -15,32 +45,54 @@ export default function Dashboard() {
       cardsFunc(
          "Balance",
          <FaDollarSign />,
-         473,
+         stats.balance,
          "Withdrawals excluded",
          "alert-danger"
       ),
       cardsFunc(
          "Investment",
          <FaTree />,
-         200,
+         stats.investment_amount,
          "Withdrawals excluded",
          "alert-primary"
       ),
       cardsFunc(
+         "Total Investments",
+         <FaPaperPlane />,
+         stats.stakings,
+         "Withdrawals excluded",
+         "alert-warning"
+      ),
+      cardsFunc(
          "Withdrawals",
          <FaPaperPlane />,
-         30,
+         stats.withdrawals,
          "Withdrawals excluded",
          "alert-warning"
       ),
       cardsFunc(
          "Total Earnings",
          <FaMoneyBillWave />,
-         85,
+         stats.total_earnings,
          "Withdrawals excluded",
          "alert-secondary"
       ),
    ];
+
+   // Date when the investment matures
+   const maturityDate = new Date(); // Replace with the actual maturity date
+   maturityDate.setDate(maturityDate.getDate() + 7); // Add 7 days
+
+   // Current date and time
+   const currentDate = new Date();
+
+   // Calculate the difference in milliseconds between the two dates
+   const timeDifferenceMs = maturityDate - currentDate;
+
+   console.log(
+      `Milliseconds left until investment matures: ${timeDifferenceMs}`
+   );
+
    return (
       <User_layout>
          <div className="dashboard">
@@ -75,6 +127,9 @@ export default function Dashboard() {
                            </div>
                         </div>
                      ))}
+                     <Countdown date={Date.now() + timeDifferenceMs}>
+                        <span>We are dine</span>
+                     </Countdown>
                   </div>
                </div>
             </div>

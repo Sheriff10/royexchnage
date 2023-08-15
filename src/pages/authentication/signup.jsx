@@ -34,7 +34,7 @@ export const Signup = () => {
          const errMsg = <div className="alert alert-danger">{data}</div>;
          return setErr(errMsg);
       } else {
-         window.location.href = "/trade";
+         window.location.href = "/user/dashboard";
       }
    };
    return (
@@ -47,7 +47,7 @@ export const Signup = () => {
                         <span className="icon text-light fs-3 pt-1 pb-2 px-3">
                            <FaBitcoin />
                         </span>
-                        <h3 className="p-3 fw-bold text-light">REGISTER TO ROYXCHANGE</h3>
+                        <h3 className="p-3 fw-bold text-light">Create TetherX account</h3>
                      </div>
                      <div className="err-con">{err}</div>
                      <div className="form-group mb-4">
@@ -108,7 +108,7 @@ export const Signup = () => {
                            <a href="#">Forgot Password?</a>
                         </span>
                         <span>
-                           <Link to="/login">
+                           <Link to="/auth/login">
                               Already have an account? Login!
                            </Link>
                         </span>

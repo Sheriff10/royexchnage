@@ -1,5 +1,5 @@
 import React from "react";
-import { Fa500Px, FaChartLine, FaCoins, FaExchangeAlt, FaHandHoldingUsd, FaHistory, FaTachometerAlt } from "react-icons/fa";
+import { Fa500Px, FaChartLine, FaCoins, FaExchangeAlt, FaHandHoldingUsd, FaHistory, FaMoneyBill, FaTachometerAlt } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
 const UserHeader = () => {
@@ -11,7 +11,7 @@ const UserHeader = () => {
       linkFunc(<FaHandHoldingUsd />, "Staking", "/user/staking"),
       linkFunc(<FaChartLine />, "Investment", "/user/investments"),
       linkFunc(<FaCoins />, "Deposit History", "/user/deposits"),
-      linkFunc(<FaCoins />, "Withdraw", "/user/withdraw"),
+      linkFunc(<FaMoneyBill />, "Withdraw", "/user/withdraw"),
       linkFunc(<FaCoins />, "Withdrawal History", "/user/withdraw-history"),
    ];
 

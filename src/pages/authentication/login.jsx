@@ -29,7 +29,7 @@ export const Login = () => {
       } else {
          const token = res.headers["x-auth-token"];
          setErr("");
-         window.location.href = '/trade'
+         window.location.href = '/user/dashboard'
          window.sessionStorage.setItem("token", token);
       }
    };
@@ -43,7 +43,7 @@ export const Login = () => {
                         <span className="icon text-light fs-3 pt-1 pb-2 px-3">
                            <FaLock />
                         </span>
-                        <h3 className="p-3 fw-bold text-light mt-2">LOGIN TO ROYXCHNAGE</h3>
+                        <h3 className="p-3 fw-bold text-light mt-2">Login to TetherX</h3>
                      </div>
                      <div className="err-con">{err}</div>
                      <div className="form-group mb-4">
@@ -88,7 +88,7 @@ export const Login = () => {
                            <a href="#">Forgot Password?</a>
                         </span>
                         <span>
-                           <Link to="/signup">
+                           <Link to="/auth/signup">
                               Don't have an account? Signup
                            </Link>
                         </span>

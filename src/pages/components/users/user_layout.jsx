@@ -1,15 +1,26 @@
 import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
+import { authorize } from "../../authentication/auth";
 import UserHeader from "./userHeader";
 
 function User_layout({ children }) {
-   const [sidebarOpen, setSidebarOpen] = useState(window.innerWidth  < 780 ? false :  true);
+   useState(() => {
+      authorize();
+   }, []);
+
+   const [sidebarOpen, setSidebarOpen] = useState(
+      window.innerWidth < 780 ? false : true
+   );
 
    return (
       <div className="u-layout">
          <div className={`container-fluid`}>
             <div className="row">
-               <div className={`col-lg-2 hh col-md-2 p-0 sidebar ${sidebarOpen && 'open'}`}>
+               <div
+                  className={`col-lg-2 hh col-md-2 p-0 sidebar ${
+                     sidebarOpen && "open"
+                  }`}
+               >
                   <UserHeader />
                </div>
                <div className="col p-0 min-h-100vh ">

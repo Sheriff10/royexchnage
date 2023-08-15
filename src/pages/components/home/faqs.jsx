@@ -3,7 +3,7 @@ import faqs_content from "./faqs_data.json";
 
 export const Faqs = () => {
    return (
-      <div className="faqs">
+      <div className="faqs" id="faqs">
          <div className="container">
             <div className="f-head">
                <h1>Frequently Ask Question (FAQs)</h1>

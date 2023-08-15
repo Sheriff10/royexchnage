@@ -1,9 +1,33 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { FaExclamationCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { tokenExpire } from "../../authentication/auth";
 import User_layout from "./user_layout";
 
 export default function Deposits() {
-   const dum = [1, 2, 3, 5];
+   const [deposits, setDeposits] = useState([]);
+   useEffect(() => {
+      getDeposits();
+   }, []);
+   const getDeposits = async () => {
+      try {
+         const response = await axios.get(
+            `${window.api}/client/deposit_history`,
+            {
+               headers: {
+                  "x-auth-token": window.token,
+                  "Content-Type": "application/json",
+               },
+            }
+         );
+         setDeposits(response.data);
+         console.log(response);
+      } catch (error) {
+         console.log(error);
+         if (error.response.data.message === "jwt expired") tokenExpire();
+      }
+   };
    return (
       <User_layout>
          <div className="investments">
@@ -27,24 +51,37 @@ export default function Deposits() {
                         </tr>
                      </thead>
                      <tbody>
-                        {dum.map((i, index) => (
+                        {deposits.map((i, index) => (
                            <tr key={index}>
-                              <td>23.8 USDT</td>
+                              <td>{i.deposit_amount} USDT</td>
                               <td>
                                  <small>
-                                    <a href="">check on bscscan</a>
+                                    <a href={i.hash}>check on bscscan</a>
                                  </small>
                               </td>
-                              <td>10-20-2034</td>
+                              <td>{i.staking_Date}</td>
                               <td>
-                                 <small className="text-warning">
-                                    processing
+                                 <small
+                                    className={` badge bg-${
+                                       i.deposit_status === "processing"
+                                          ? "danger"
+                                          : "success"
+                                    }`}
+                                 >
+                                    {i.deposit_status}
                                  </small>
                               </td>
                            </tr>
                         ))}
                      </tbody>
                   </table>
+                  {deposits.length === 0 && (
+                     <div className="fw-bold text-center py-5 bg-gray border-bottom border-danger shadow rounded">
+                        <span>
+                           <FaExclamationCircle /> No Deposit
+                        </span>
+                     </div>
+                  )}
                </div>
             </div>
          </div>

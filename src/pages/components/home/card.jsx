@@ -1,6 +1,11 @@
 import React from "react";
-import { FaKey } from "react-icons/fa";
+import { RiShieldCheckFill } from 'react-icons/ri';
+import { FaChartLine, FaKey } from "react-icons/fa";
+import { IoChatbubbleEllipses } from 'react-icons/io5';
+
 export const Card = ({card_arr, card_title, card_slogan}) => {
+
+   const icons = [<FaChartLine />, <RiShieldCheckFill />, <IoChatbubbleEllipses />]
    return (
       <div className="cards">
          <div className="container">
@@ -12,10 +17,10 @@ export const Card = ({card_arr, card_title, card_slogan}) => {
                <div className="row justify-content-center">
                   {card_arr.map((i, index) => (
                      <div className="col-lg-4 col-sm-12 col-md-6" key={index}>
-                        <div className={`c-card ${i.color}`}>
+                        <div className={`c-card ${i.color} shadow`}>
                            <div className={`c-card-icon`}>
                               <i className={`${i.icon_color}`}>
-                                 <FaKey />
+                                 {icons[index]}
                               </i>
                            </div>
                            <div className="c-card-title text-center">

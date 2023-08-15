@@ -1,29 +1,29 @@
 {
    "faqs": [
       {
-         "title": "Is it Safe to Trade with Paybiz",
-         "content": "It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though thetransition does limit overflow.",
+         "title": "How does staking work on your platform?",
+         "content": "Staking on our platform involves holding your cryptocurrency in a designated wallet to support network operations. By doing so, you contribute to the security and functionality of the blockchain. In return for your participation, you earn rewards in the form of additional cryptocurrency. Our user-friendly interface guides you through the staking process step by step, making it accessible to both beginners and experienced investors.",
          "data_bs_target": "#collapseOne",
          "arial": "collapseOne",
          "id": "headingOne"
         },
       {
-        "title": "Is it Safe to Trade with Paybiz",
-        "content": "It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though thetransition does limit overflow.",
+        "title": "What is the minimum investment amount for staking?",
+        "content": "We offer a range of staking options to accommodate various budgets. The minimum investment amount varies depending on the cryptocurrency you choose to stake. Our platform is designed to be inclusive, ensuring that individuals with different investment capacities can participate and benefit from the staking opportunities we offer.",
         "data_bs_target": "#collapseTwo",
         "arial": "collapseTwo",
         "id": "headingTwo"
     },
      {
-        "title": "Is it Safe to Trade with Paybiz",
-        "content": "It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though thetransition does limit overflow.",
+        "title": "How do you ensure the security of my funds during staking?",
+        "content": "The security of your funds is our utmost priority. We implement advanced encryption techniques and multi-layer security protocols to safeguard your assets. Additionally, we utilize secure wallets and follow industry best practices to minimize the risk of unauthorized access or breaches. You can stake with confidence, knowing that your investments are protected by our robust security measures.",
         "data_bs_target": "#collapseThree",
         "arial": "collapseThree",
         "id": "headingThree"
     },
      {
-        "title": "Is it Safe to Trade with Paybiz",
-        "content": "It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though thetransition does limit overflow.",
+        "title": "What is the expected return on investment (ROI) for staking?",
+        "content": "While the specific ROI varies depending on the cryptocurrency you stake and market conditions, our platform offers a range of 7-100% ROI within a 7-day period. It's important to note that cryptocurrency markets can be volatile, influencing potential returns. We provide transparent information about historical performance and market trends to help you make informed decisions about your staking strategy.",
         "data_bs_target": "#collapseFour",
         "arial": "collapseFour",
         "id": "headingFour"

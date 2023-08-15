@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,400;0,500;1,100&display=swap');
 
 #root span, #root h1, #root h2, #root h3, #root small, #root p, #root a, #root li, #root tr {
-  font-family: 'Preahvihear', sans-serif;
+   font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .pb-bg-pri-grad {

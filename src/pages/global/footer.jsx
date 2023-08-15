@@ -1,5 +1,5 @@
 import React from "react";
-import { FaTwitter } from "react-icons/fa";
+import { FaLinkedin, FaTelegram, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export const Footer = () => {
@@ -10,7 +10,7 @@ export const Footer = () => {
                <div className="col-lg-4 col-sm-12 col-md-6">
                   <div className="ft-content">
                      <div className="ft-head">
-                        <span> Learn More</span>
+                        <span> Quick Links</span>
                      </div>
                      <div className="ft-body">
                         <ul>
@@ -18,13 +18,13 @@ export const Footer = () => {
                               <Link to={"/#"}>Home </Link>
                            </li>
                            <li>
-                              <Link to={"/#"}>Home </Link>
+                              <Link to={"/#"}>About </Link>
                            </li>
                            <li>
-                              <Link to={"/#"}>Home </Link>
+                              <Link to={"/#"}>Service </Link>
                            </li>
                            <li>
-                              <Link to={"/#"}>Home </Link>
+                              <Link to={"/#"}>FAQs </Link>
                            </li>
                         </ul>
                      </div>
@@ -37,7 +37,7 @@ export const Footer = () => {
                      </div>
                      <div className="ft-body">
                         <p>Office 123-456-7890</p>
-                        <p>P.O.B 1233, Area-5 m command, LA, NG</p>
+                        <p>P.O.B 19907, DA, US</p>
                      </div>
                   </div>
                </div>
@@ -52,13 +52,10 @@ export const Footer = () => {
                               <FaTwitter />
                            </a>
                            <a href="#" target={"blank"}>
-                              <FaTwitter />
+                              <FaTelegram />
                            </a>
                            <a href="#" target={"blank"}>
-                              <FaTwitter />
-                           </a>
-                           <a href="#" target={"blank"}>
-                              <FaTwitter />
+                              <FaLinkedin />
                            </a>
                         </div>
                      </div>

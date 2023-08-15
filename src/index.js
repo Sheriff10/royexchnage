@@ -5,7 +5,10 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 
-window.api = "http://localhost:5000"
+// window.api = "http://localhost:5000"
+window.api = "https://bright-pike-hat.cyclic.cloud"
+
+window.token = window.sessionStorage.getItem('token')
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
