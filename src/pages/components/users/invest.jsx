@@ -87,7 +87,7 @@ export default function Invest({ state, dispatch, toggle }) {
                                     onClick={copyAddress}
                                     className="text-break"
                                  >
-                                    0xf825776e971da4400D9C98B09ee87ECb741bA301
+                                    0x4333D0D2A4ecA4dcb8c3207a284A84A20229683C
                                  </small>
                               </td>
                            </tr>
