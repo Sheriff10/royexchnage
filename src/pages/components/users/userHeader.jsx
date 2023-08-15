@@ -18,7 +18,7 @@ const UserHeader = () => {
    return (
       <div className="u-header bg-danger h-100">
          <header className="bg-danger text-center py-3 text-white">
-            <span className="fs-6 fw-bold">Welcome, Sheezey </span>
+            <span className="fs-6 fw-bold">Welcome </span>
          </header>
          <ul className="p-0 m-0">
             {linkArr.map((i, index) => (
