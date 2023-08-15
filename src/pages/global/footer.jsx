@@ -66,8 +66,12 @@ export const Footer = () => {
                <div className="row">
                   <div className="col">
                      <div className="ft-img">
-                        <img src="logo.png" alt="firstPay" className="img-fluid"/>
-                        <span className="text-black p-2 h5"><b>FirstPay</b></span>
+                        <span className="h3 text-light d-flex">
+                           <b>
+                              Tether
+                              <span className="text-danger fw-bold">X</span>
+                           </b>
+                        </span>
                      </div>
                   </div>
                   <div className="col">
