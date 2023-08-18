@@ -97,7 +97,7 @@ export default function Invest({ state, dispatch, toggle }) {
                                  <input
                                     type="number"
                                     className="form-control"
-                                    placeholder="$500 - $4999"
+                                    placeholder="$200 - $4999"
                                     min={200}
                                     value={state.deposit_amount}
                                     onChange={(e) =>
