@@ -4,7 +4,7 @@
          "color": "white",
          "icon_color": "bg-danger",
          "title": "Staking Opportunities",
-         "icon": "<FaChartLine size={30} />",
+         "icon": "<FaChartLine  />",
          "text": "Invest in our platform to access a range of staking opportunities that offer impressive returns of 7-100% ROI within just 7 days. Our carefully curated selection of assets ensures that you can put your funds to work efficiently while enjoying the benefits of compounding rewards."
       },
       {
