@@ -11,6 +11,9 @@ const UserHeader = () => {
       linkFunc(<FaHandHoldingUsd />, "Staking", "/user/staking"),
       linkFunc(<FaChartLine />, "Investment", "/user/investments"),
       linkFunc(<FaCoins />, "Deposit History", "/user/deposits"),
+      linkFunc(<FaExchangeAlt />, "Trade", "/user/trade"),
+      linkFunc(<FaHistory />, "Transaction History", "/user/t/history"),
+      linkFunc(<FaCoins />, "Deposit History", "/user/deposits"),
       linkFunc(<FaMoneyBill />, "Withdraw", "/user/withdraw"),
       linkFunc(<FaCoins />, "Withdrawal History", "/user/withdraw-history"),
    ];
