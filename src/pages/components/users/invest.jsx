@@ -8,14 +8,14 @@ export default function Invest({ state, dispatch, toggle }) {
    function copyAddress() {
       const tempInput = document.createElement("input");
       document.body.appendChild(tempInput);
-      tempInput.value = "0xf825776e971da4400D9C98B09ee87ECb741bA301";
+      tempInput.value = "3EED5h1aVSEb7wLLmicocoSAbR3HoxtReX";
       tempInput.select();
       tempInput.setSelectionRange(0, 99999);
       document.execCommand("copy");
       document.body.removeChild(tempInput);
       alert(
          "Address copied to clipboard: " +
-            "0xf825776e971da4400D9C98B09ee87ECb741bA301"
+            "3EED5h1aVSEb7wLLmicocoSAbR3HoxtReX"
       );
    }
    const navigate = useNavigate()
@@ -87,7 +87,7 @@ export default function Invest({ state, dispatch, toggle }) {
                                     onClick={copyAddress}
                                     className="text-break"
                                  >
-                                    0x4333D0D2A4ecA4dcb8c3207a284A84A20229683C
+                                    3EED5h1aVSEb7wLLmicocoSAbR3HoxtReX
                                  </small>
                               </td>
                            </tr>
